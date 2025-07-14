@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Dawid Pietrala, Kielce University of Technology, LIC=Q7GID-SIMBT-GIAWN-WEEUE-A6NJL-03QC3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.40.0.3
+Toolchain Path:  C:\Users\Dawid\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Dawid\MojDysk\Avena Technologie\AT_Repo\jtc\AT_H745_JTC_1\AT_H7M7_JTC_1\AT_H7M7_JTC_1.uvprojx
+Project File Date:  10/31/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\Dawid\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild Project 'AT_H7M7_JTC_1' - Target 'Target 1'
+compiling MatlabSim.c...
+compiling InputsOutputs.c...
+compiling Gripper.c...
+C:\Users\Dawid\MojDysk\Avena Technologie\AT_Repo\jtc\AT_H745_JTC_1\AT_H7M7_JTC_1\main.c(7): error: call to undeclared function 'Control_JtcJogKinCalc'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    7 |                 Control_JtcJogKinCalc();
+      |                 ^
+C:\Users\Dawid\MojDysk\Avena Technologie\AT_Repo\jtc\AT_H745_JTC_1\AT_H7M7_JTC_1\main.c(7): note: did you mean 'ControlJtcJogKinCalc'?
+C:\Users\Dawid\MojDysk\Avena Technologie\AT_Repo\jtc\AT_H745_JTC_1\AT_H7M7_JTC_1\Control.h(756): note: 'ControlJtcJogKinCalc' declared here
+  756 | void ControlJtcJogKinCalc(void);
+      |      ^
+1 error generated.
+compiling main.c...
+compiling Debug.c...
+assembling startup_stm32h745xx.s...
+compiling Joints.c...
+compiling system_stm32h7xx_dualcore_boot_cm4_cm7.c...
+compiling TrajGen.c...
+compiling MB_RTU_Slave.c...
+compiling Can.c...
+compiling Control.c...
+compiling RNEA.c...
+".\Objects\AT_H7M7_JTC_1.axf" - 1 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32H7xx_DFP.3.1.1.pack
+                Keil::STM32H7xx_DFP@3.1.1
+                STMicroelectronics STM32H7 Series Device Support and Examples
+   * Component: Startup Version: 1.11.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/Dawid/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/Dawid/AppData/Local/Arm/Packs/Keil/STM32H7xx_DFP/3.1.1/Drivers/CMSIS/Device/ST/STM32H7xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device:Startup@1.11.0
+      Source file:   Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx_dualcore_boot_cm4_cm7.c
+      Source file:   Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/arm/startup_stm32h745xx.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
